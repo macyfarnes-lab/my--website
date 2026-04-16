@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="island-container">
+    <div class="island-label">Click me for fun fact > </div>
+    <div class="island" onclick="toggleFact()">🌴</div>
+</div>
+
+<div class="fact-bubble" id="factBubble">
+    I served a mission in Guam 🌊
+</div>
+
+<div class="hero">
+<div class="glass-card">
+
+<h1>Macy Farnes</h1>
+<p>Business Student | Brigham Young University</p>
+
+<p>
+I am passionate about working with people, building meaningful experiences, and exploring new places.
+This site highlights my professional experience, a custom travel page, and an interactive web application I built.
+</p>
+
+<div>
+<a href="html/resume.html" class="btn btn-light btn-custom">Resume</a>
+<a href="html/scratch.html" class="btn btn-success btn-custom">Travel Page</a>
+<a href="html/app.html" class="btn btn-warning btn-custom">Game</a>
+<a href="html/tableau.html" class="btn btn-info btn-custom">Tableau</a>
+</div>
+
+</div>
+</div>
+
+<script>
+let visible = false;
+
+const facts = [
+    "I served a mission in Guam 🌊",
+    "I love traveling to tropical places 🌴",
+    "Saipan is one of my favorite places ever ✈️",
+    "I’m a BYU business student 📚",
+    "I love being active and working out 💪",
+    "I enjoy creating videos and content 🎥",
+    "I nanny and love working with kids 👶",
+    "I want to own my own business one day 💼",
+    "I love spontaneous adventures 🌙",
+    "I’m really good at saving money 💰"
+];
+
+function toggleFact() {
+    const bubble = document.getElementById("factBubble");
+
+    if (visible) {
+        bubble.style.display = "none";
+        visible = false;
+    } else {
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        bubble.innerText = randomFact;
+        bubble.style.display = "block";
+        visible = true;
+    }
+}
+</script>
+
+</body>
+</html>

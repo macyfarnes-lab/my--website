@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tableau Dashboard</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Your CSS -->
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<div class="hero">
+
+<div class="glass-card text-center">
+
+    <!-- NAV BUTTONS -->
+    <div class="mt-3 text-center">
+        <a href="../index.html" class="btn btn-light btn-custom">Home</a>
+        <a href="resume.html" class="btn btn-success btn-custom">Resume</a>
+        <a href="scratch.html" class="btn btn-primary btn-custom">Travel Page</a>
+        <a href="app.html" class="btn btn-warning btn-custom">Game</a>
+    
+    </div>
+
+    <!-- TITLE -->
+    <h1 class="mt-4">My Travel Tableau Dashboard</h1>
+
+    <p class="mt-3">
+        This dashboard shows travel-related data visualization using Tableau.
+    </p>
+
+    <!-- ✅ REAL TABLEAU EMBED -->
+    <div class='tableauPlaceholder' id='viz1776302429872' style='position: relative; margin-top:20px;'>
+        <noscript>
+            <a href='#'>
+                <img alt='Dashboard 1' 
+                src='https://public.tableau.com/static/images/tr/travelchart/Dashboard1/1.png' 
+                style='border: none' />
+            </a>
+        </noscript>
+
+        <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https://public.tableau.com/' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='travelchart/Dashboard1' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+        </object>
+    </div>
+
+    <script type='text/javascript'>
+        var divElement = document.getElementById('viz1776302429872');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+
+        vizElement.style.width = '100%';
+        vizElement.style.height = '600px';
+
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
+
+</div>
+</div>
+
+</body>
+</html>

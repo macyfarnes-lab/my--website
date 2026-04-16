@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 51, 102, 0.6), rgba(0, 128, 128, 0.6)),
+    url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 0;
+}
+
+.glass-card {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    color: white;
+}
+
+.btn-custom {
+    margin: 8px;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+
+.section {
+    margin-top: 30px;
+}.island-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.island {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.fact-bubble {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    color: #003366;
+    padding: 12px;
+    border-radius: 15px;
+    display: none;
+}
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px auto;
+    display: block;
+}
+/* 🌴 CONTAINER */
+.island-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 🌴 ICON */
+.island {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* 💊 PILL BUTTON STYLE (MATCHES YOUR OTHER BUTTONS) */
+.island-label {
+    background: white;
+    color: #003366;
+
+    padding: 10px 18px;
+    border-radius: 25px; /* THIS makes it pill-shaped */
+
+    font-weight: 500;
+    white-space: nowrap; /* keeps text on one line */
+}
+
+/* 💬 FACT POPUP */
+.fact-bubble {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+
+    background: white;
+    color: #003366;
+
+    padding: 12px 16px;
+    border-radius: 15px;
+
+    max-width: 250px;
+    display: none;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+}
